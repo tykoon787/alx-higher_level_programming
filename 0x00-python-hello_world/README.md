@@ -11,3 +11,9 @@
 
 ## 3-print_number
 > Print 98 Battery Street
+
+## 4-print_float
+> Print a float value to the presion of 2
+
+## 5-print_string
+> Print a string 3 times and the first 9 Characters of the stirng
