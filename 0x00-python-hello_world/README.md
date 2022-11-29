@@ -26,3 +26,6 @@
 
 ## 8-concat_edtes
 > Concat edges
+
+## 9-Easter_Egg
+> The Zen of Python
