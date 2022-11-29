@@ -1,1 +1,1 @@
-print("I am the Tykoon]n")
+print("I am the Tykoon\n")
