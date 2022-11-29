@@ -1,1 +1,1 @@
-print("I am the Tykoon")
+print("Best School")
