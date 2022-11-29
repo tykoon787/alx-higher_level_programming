@@ -17,3 +17,6 @@
 
 ## 5-print_string
 > Print a string 3 times and the first 9 Characters of the stirng
+
+## 6-Concat
+> String concatenation
