@@ -8,3 +8,6 @@
 
 ## 2-print_alphabets.py
 > Print all lowercase alphabets
+
+## 3-print_alphabet.py
+> Print all alphabets except for `q` and `e`
