@@ -5,3 +5,6 @@
 
 ## 1-1-last_digit.py
 > Checks for last digit and performs conditional operation
+
+## 2-print_alphabets.py
+> Print all lowercase alphabets
