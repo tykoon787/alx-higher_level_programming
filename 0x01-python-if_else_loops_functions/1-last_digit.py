@@ -12,7 +12,7 @@ if (last_digit % 10) > 5:
     msg = "and is greater than 5"
     print(f"Last digit of {number} is {last_digit} {msg}")
 elif (last_digit == 0):
-    msg = "and is zero"
+    msg = "and is 0"
     print(f"Last digit of {number} is {last_digit} {msg}")
 elif last_digit < 6 and last_digit != 0:
     msg = "and is less than 6 and not 0"
