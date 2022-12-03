@@ -11,3 +11,6 @@
 
 ## 3-print_alphabet.py
 > Print all alphabets except for `q` and `e`
+
+## 4-print_hexa.py
+> Print hexadecimal equivalent of numbers `0` to `98`
