@@ -17,3 +17,6 @@
 
 ## 5-print_comb2.py
 > Print numbers from `0` to `99`
+
+## 7-islower.py
+> Check if char is lower
