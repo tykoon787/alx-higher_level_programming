@@ -35,3 +35,6 @@
 
 ## 11-pow.py
 > A function that returns the power of a to b
+
+## 12-fizzbuzz.py
+> Classical FizzBuzz
