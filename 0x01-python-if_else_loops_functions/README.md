@@ -18,6 +18,9 @@
 ## 5-print_comb2.py
 > Print numbers from `0` to `99`
 
+## 6-print_comb3.py
+> Prints all possible combinations of two digits
+
 ## 7-islower.py
 > Check if char is lower
 
