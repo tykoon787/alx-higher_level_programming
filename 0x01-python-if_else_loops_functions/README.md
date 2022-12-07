@@ -32,3 +32,6 @@
 
 ## 10-add.py
 > A function that adds two integers
+
+## 11-pow.py
+> A function that returns the power of a to b
