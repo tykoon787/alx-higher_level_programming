@@ -20,3 +20,6 @@
 
 ## 7-islower.py
 > Check if char is lower
+
+## 8-isupper.py
+> A Function that prints a string in uppercase
