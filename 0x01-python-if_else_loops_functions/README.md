@@ -43,3 +43,6 @@
 
 ## 100-tebaphla.py
 > Prints the ascii in reverse order
+
+## 101-remove_char_at.py
+> Creates a copy of the string, removing the character at the position n
