@@ -7,7 +7,10 @@ if __name__ == "__main__":
 
     if len == 1:
         print("0 arguments.")
-    elif len > 1:
+    elif len == 2:
+        print("1 argument:")
+        print("1: {}".format(sys.argv[1]))
+    elif len > 2:
         print("{} arguments:".format(len - 1))
         while (len != 1):
             print("{}: {}".format(counter, sys.argv[counter]))
