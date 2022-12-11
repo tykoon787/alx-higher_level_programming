@@ -17,3 +17,6 @@
 
 ## 5-Variable_load.py
 > Imports a and prints its value
+
+## 100-my_calculator.py
+> Calculator
