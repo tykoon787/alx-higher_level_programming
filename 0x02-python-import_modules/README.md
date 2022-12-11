@@ -11,3 +11,6 @@
 
 ## 3-infinite_add.py
 > Adds arguments from CLI
+
+## 4-hidden_discovery.py
+> Prints names
