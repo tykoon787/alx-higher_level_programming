@@ -14,3 +14,6 @@
 
 ## 4-hidden_discovery.py
 > Prints names
+
+## 5-Variable_load.py
+> Imports a and prints its value
