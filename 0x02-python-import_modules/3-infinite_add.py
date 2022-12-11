@@ -14,7 +14,6 @@ if __name__ == "__main__":
                 result += int(sys.argv[index])
                 index += 1
                 length -= 1
-
-        print("{:d}".format(result))
+            print("{:d}".format(result))
 
     add()
