@@ -32,3 +32,6 @@
 
 ## 101-compile 
 > A bash script that compiles a python file
+
+## 102-magic_calculation
+> A magician never reveals his secret
