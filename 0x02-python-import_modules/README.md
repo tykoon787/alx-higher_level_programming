@@ -23,3 +23,6 @@
 
 ## 101-easy_print.py
 > Not as easy as it sounds
+
+## 102-magic calculation
+> Abracadabra
