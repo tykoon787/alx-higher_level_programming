@@ -20,3 +20,6 @@
 
 ## 100-my_calculator.py
 > Calculator
+
+## 101-easy_print.py
+> Not as easy as it sounds
