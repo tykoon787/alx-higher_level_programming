@@ -29,3 +29,6 @@
 
 ## 9-Easter_Egg
 > The Zen of Python
+
+## 101-compile 
+> A bash script that compiles a python file
