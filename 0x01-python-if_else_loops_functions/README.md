@@ -46,3 +46,6 @@
 
 ## 101-remove_char_at.py
 > Creates a copy of the string, removing the character at the position n
+
+## 102-magic_calculator.py
+> Let there be light
