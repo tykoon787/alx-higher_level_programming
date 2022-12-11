@@ -8,3 +8,6 @@
 
 ## 2-args.py
 > Prints the arguments passed to the command line
+
+## 3-infinite_add.py
+> Adds arguments from CLI
