@@ -38,3 +38,6 @@
 
 ## 12-fizzbuzz.py
 > Classical FizzBuzz
+
+## 13-insert_number.c
+> Insert a number in a list
