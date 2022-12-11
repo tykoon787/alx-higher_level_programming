@@ -30,6 +30,9 @@
 ## 9-Easter_Egg
 > The Zen of Python
 
+## 100-write.py
+> A py script that prints exactly that
+
 ## 101-compile 
 > A bash script that compiles a python file
 
