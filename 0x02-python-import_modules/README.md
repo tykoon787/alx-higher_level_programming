@@ -26,3 +26,6 @@
 
 ## 102-magic calculation
 > Abracadabra
+
+## 103-Alphabets
+> Prints alphabets in UPPERCASE
