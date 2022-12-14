@@ -32,3 +32,6 @@
 
 ## 10-divisible_by_2.py
 > Finds all multiples of two
+
+## 11-delete_at.py
+> Deletes an item at a specific position in the list
