@@ -23,3 +23,6 @@
 
 ## 7-add_tuple.py
 > Adds individual elements of tuples
+
+## 8-multiple_returns.py
+> Returns a tuple with the length of a string and its first character
