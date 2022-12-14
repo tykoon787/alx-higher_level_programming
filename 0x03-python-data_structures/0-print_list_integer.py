@@ -2,4 +2,4 @@
 
 def print_list_integrity(my_list=[]):
     for x in my_list: 
-        print("{}".format(x))
+        print("{:d}".format(x))
