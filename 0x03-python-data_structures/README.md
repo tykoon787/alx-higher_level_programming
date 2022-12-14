@@ -20,3 +20,6 @@
 
 ## 6-print_matrix_integer
 > Prints a matrix
+
+## 7-add_tuple.py
+> Adds individual elements of tuples
