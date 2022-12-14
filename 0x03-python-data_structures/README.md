@@ -17,3 +17,6 @@
 
 ## 5-no_c.py
 > A function that replaces the letter `c` with nothing
+
+## 6-print_matrix_integer
+> Prints a matrix
