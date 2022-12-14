@@ -11,3 +11,6 @@
 
 ## 3-print_reversed_list_integer.py
 > A function that prints all integers in reverse order
+
+## 4-new_in_list.py
+> A function that replaces an element in a list at a specific position without modifying the original list
