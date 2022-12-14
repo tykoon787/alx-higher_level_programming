@@ -38,3 +38,6 @@
 
 ## 12-switch.py
 > Switch value of a and b
+
+## 13-is_palindrome.c
+> Technical Interview
