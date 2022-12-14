@@ -5,3 +5,6 @@
 
 ## 1-element_at.py
 > A function that retrieves an element from a list
+
+## 2-replace_in_list.py
+> A function that replaces an element in a list
