@@ -8,3 +8,6 @@
 
 ## 2-replace_in_list.py
 > A function that replaces an element in a list
+
+## 3-print_reversed_list_integer.py
+> A function that prints all integers in reverse order
