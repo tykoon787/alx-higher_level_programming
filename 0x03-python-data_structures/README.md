@@ -29,3 +29,6 @@
 
 ## 9-max_integer.py
 > Prints the largest integer in a list
+
+## 10-divisible_by_2.py
+> Finds all multiples of two
