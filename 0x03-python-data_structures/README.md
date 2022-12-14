@@ -26,3 +26,6 @@
 
 ## 8-multiple_returns.py
 > Returns a tuple with the length of a string and its first character
+
+## 9-max_integer.py
+> Prints the largest integer in a list
