@@ -1,22 +1,21 @@
 #!/usr/bin/python3
-"""
-add_integer:
-    Checks if parameters are int
-    Returns sum of parameters
-"""
-
-
 def add_integer(a, b=98):
     """
-    Checks if int, otherwise return sum
+    adds two integers
+    Args:
+        a (int): First integer to add
+        b (int): Second integer to add
+    Raises:
+        TypeError: Exception if size is not an integer
     """
-    if type(a) == float or type(b) == float:
-        a = int(a)
-        b = int(b)
-
-    if type(a) != int:
-        raise TypeError("a must be an integer")
-    elif type(b) != int:
-        raise TypeError("b must be an integer")
-    else:
-        return a + b
+    if type(a) is not int:
+        if type(a) is float and a == a and abs(a) <= 1.7976931348623158e+308:
+            a = int(a)
+        else:
+            raise TypeError("a must be an integer")
+    if type(b) is not int:
+        if type(b) is float and b == b and abs(b) <= 1.7976931348623158e+308:
+            b = int(b)
+        else:
+            raise TypeError("b must be an integer")
+    return a + b
