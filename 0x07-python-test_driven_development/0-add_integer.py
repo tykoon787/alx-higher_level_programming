@@ -2,7 +2,7 @@
 """
 add_integer:
     Checks if args are int
-    Returns sum of args
+    Returns sum of the args
 """
 
 
