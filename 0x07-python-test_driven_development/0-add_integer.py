@@ -1,8 +1,10 @@
+#!/usr/bin/python3
 """
 add_integer:
     Checks if args are int
     Returns sum of args
 """
+
 
 def add_interger(a, b=98):
     """Function to Add an Integer"""
