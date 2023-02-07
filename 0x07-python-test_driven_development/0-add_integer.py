@@ -6,8 +6,10 @@ add_integer:
 """
 
 
-def add_interger(a, b=98):
-    """Function to Add an Integer"""
+def add_integer(a, b=98):
+    """
+    Function to Add an Integer
+    """
     if (isinstance(a, (int, float)) and isinstance(b, (int, float))):
         a = int(a)
         b = int(b)
