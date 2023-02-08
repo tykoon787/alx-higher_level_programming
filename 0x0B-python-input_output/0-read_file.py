@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 
+"""
+Function to read a file from file name
+
+"""
+
+
 def read_file(filename=""):
     """
-    Function that reads a file
+    Reads a file, filename
     """
     with open(filename, mode="r", encoding="utf-8") as fileName:
         while True:
