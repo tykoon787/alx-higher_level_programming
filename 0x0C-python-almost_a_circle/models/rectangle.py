@@ -25,6 +25,11 @@ class Rectangle(Base):
         Variable x
     y : int
         Variable y
+
+    Methods
+    -------
+    area:
+        Returns the area of a rectangle
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
@@ -80,3 +85,9 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """
+        Function that returns the area of a  rectangle
+        """
+        return (self.__width * self.__height)
