@@ -6,8 +6,7 @@ Classes:
     Rectangle(Base)
 
 """
-# from models.base import Base
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -114,29 +113,24 @@ class Rectangle(Base):
         """
         Assigns an argument to each attribue
         """
-        self.id = args[1]
-        self.__width = args[2]
-        self.__height = args[3]
-        self.__x = args[4]
-        self.__y = args[5]
-
-
-if __name__ == "__main__":
-
-    r1 = Rectangle(10, 10, 10, 10)
-    print(r1)
-
-    r1.update(89)
-    print(r1)
-
-    r1.update(89, 2)
-    print(r1)
-
-    r1.update(89, 2, 3)
-    print(r1)
-
-    r1.update(89, 2, 3, 4)
-    print(r1)
-
-    r1.update(89, 2, 3, 4, 5)
-    print(r1)
+        args = list(args)
+        if len(args) == 1:
+            self.id = args[0]
+        elif len(args) == 2:
+            self.id = args[0]
+            self.__width = args[1]
+        elif len(args) == 3:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+        elif len(args) == 4:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+        elif len(args) == 5:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
