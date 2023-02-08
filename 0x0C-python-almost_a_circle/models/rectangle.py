@@ -14,12 +14,17 @@ class Rectangle(Base):
     Class Rectangle that Inherits from base
 
     ...
-    Attributes:
-        width(int): Width of the Rectangle
-        height(int): Height of the rectangle
-        x(int) : Variable x
-        y(int) : Variable y
-        id = Id
+
+    Attributes
+    ----------
+    width : int
+        Width of the Rectangle
+    height: int
+        Height of the Rectangle
+    x : int
+        Variable x
+    y : int
+        Variable y
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
