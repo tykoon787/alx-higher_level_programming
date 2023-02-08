@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import json
+
+
 """
 A function that returs the JSON Rep of an object(string)
 """
