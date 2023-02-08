@@ -100,3 +100,11 @@ class Rectangle(Base):
         while height_counter < self.__height:
             print("#" * self.__width)
             height_counter += 1
+
+    def __str__(self):
+        """
+        Returns formatted information to display
+        """
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                        self.id, self.__x, self.__y,
+                                        self.__width, self.__height)
