@@ -6,7 +6,8 @@ Classes:
     Rectangle(Base)
 
 """
-from models.base import Base
+# from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -91,3 +92,12 @@ class Rectangle(Base):
         Function that returns the area of a  rectangle
         """
         return (self.__width * self.__height)
+
+    def display(self):
+        """
+        Displays the rectangle instance
+        """
+        height_counter = 0
+        while height_counter < self.__height:
+            print("#" * self.__width)
+            height_counter += 1
