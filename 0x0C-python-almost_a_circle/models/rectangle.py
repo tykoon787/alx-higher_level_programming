@@ -8,6 +8,7 @@ Classes:
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     Class Rectangle that Inherits from base
@@ -36,7 +37,7 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def setWidth(self, width):
+    def width(self, width):
         self.__width = width
 
     @property
@@ -54,3 +55,11 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         self.__x = value
+
+    @property
+    def y(self):
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        self.__y = value
