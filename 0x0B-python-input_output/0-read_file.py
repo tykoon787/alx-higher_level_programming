@@ -12,7 +12,12 @@ def read_file(filename=""):
     """
     with open(filename, mode="r", encoding="utf-8") as fileName:
         while True:
-            line = fileName.readline()
+            line = fileName.read().splitlines()
             if not line:
                 break
-            print(line)
+            else:
+                for i in line:
+                    if i != "":
+                        print(i)
+                    else:
+                        print("")
