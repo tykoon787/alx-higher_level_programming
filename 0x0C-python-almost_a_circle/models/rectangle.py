@@ -54,7 +54,7 @@ class Rectangle(Base):
         if (type(value) != int):
             raise TypeError("{} must be an integer".format(value))
         elif(value < 0):
-            raise ValueError("{} must be > 0".format(value))
+            raise ValueError("{} must be >= 0".format(value))
         self.__height = value
 
     @property
@@ -66,5 +66,5 @@ class Rectangle(Base):
         if (type(value) != int):
             raise TypeError("{} must be an integer".format(value))
         elif(value < 0):
-            raise ValueError("{} must be > 0".format(value))
+            raise ValueError("{} must be >= 0".format(value))
         self.__x = value
