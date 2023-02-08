@@ -10,7 +10,7 @@ Functions:
 import json
 
 
-def load_from_json_file(filename):
+def load_from_json_file(filename=""):
     """
     Function that returns an object from a file
     """
