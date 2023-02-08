@@ -1,0 +1,8 @@
+
+>>> from_json_string = __import__('4-from_json_string').from_json_string
+>>> import json
+>>> dict = {"Language" : "Swahili", "Body Type" : "Slim", "Height" : "10cm"}
+>>> dumped = json.dumps(dict)
+>>> to_be_returned = from_json_string(dumped)
+>>> print(type(to_be_returned))
+<class 'dict'>

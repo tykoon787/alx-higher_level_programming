@@ -1,0 +1,9 @@
+==============================================================
+'Testing File ' : '1-write_file.py'
+==============================================================
+'Testing function' : 'write_file(filename="", text="")'
+==============================================================
+
+>>> write_file = __import__('1-write_file').write_file
+>>> print(write_file("Dead_User.txt", "Zombies will take over the world"))
+32 
