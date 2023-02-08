@@ -6,8 +6,7 @@ Classes:
     Rectangle(Base)
 
 """
-from base import Base
-
+from models.base import Base
 
 class Rectangle(Base):
     """
@@ -24,7 +23,6 @@ class Rectangle(Base):
     x : int
         Variable x
     y : int
-        Variable y
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
