@@ -70,7 +70,7 @@ class Square(Rectangle):
                 self.id = args[0]
                 self.size = args[1]
                 self.x = args[2]
-                self.y = args[4]
+                self.y = args[3]
             except IndexError:
                 pass
         else:
