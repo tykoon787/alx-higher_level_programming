@@ -64,5 +64,21 @@ class Base():
                 f.write("[]")
             else:
                 to_write = cls.to_json_string(
-                            [item.to_dictionary() for item in list_objs])
+                    [item.to_dictionary() for item in list_objs])
                 f.write(to_write)
+
+    @classmethod
+    def from_json_string(cls, json_string):
+        """
+        Function that Convertes a json string to objects
+
+            Parameters:
+                json_string (str): Json string to load
+
+            Return:
+                Object
+        """
+        if type(json_string) != str or len(json_string) == 0:
+            return []
+        else:
+            return json.loads(json_string)
