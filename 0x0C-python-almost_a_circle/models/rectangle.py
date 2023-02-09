@@ -120,7 +120,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """
-        Assigns an argument to each attribue
+        Function that returns an instance from a dict
         """
         if len(kwargs) != 0:
             kwargs_dict = kwargs.items()
