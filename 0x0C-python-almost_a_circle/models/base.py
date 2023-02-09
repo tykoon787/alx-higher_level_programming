@@ -9,6 +9,8 @@ Functions:
     to_json_string(object, list_dictionary)
 """
 import json
+from rectangle import Rectangle
+from square import Square
 
 
 class Base():
@@ -82,3 +84,16 @@ class Base():
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Returns an instance with all attributes set
+        """
+        if cls.__name__ == "Rectangle":
+            temp = cls(1, 2)
+        if cls.__name__ == "Square":
+            temp = cls(1)
+
+        temp.update(**dictionary)
+        return temp
