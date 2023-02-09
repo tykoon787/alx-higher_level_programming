@@ -106,7 +106,7 @@ class Rectangle(Base):
         """
         Returns formatted information to display
         """
-        return ("[{}] ({}) <{}>/<{}> - <{}>/<{}>".format(
+        return ("[{}] (<{}>) <{}>/<{}> - <{}>/<{}>".format(
             __class__.__name__,
             self.id,
             self.__x,
