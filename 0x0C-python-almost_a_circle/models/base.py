@@ -31,7 +31,7 @@ class Base():
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_string(list_dictionaries: dict):
+    def to_json_string(list_dictionaries):
         """
         Function that convertes a dictionary to json_string
 
@@ -58,7 +58,8 @@ class Base():
 
         """
         # Convert the list of instances to json string
-        to_write = cls.to_json_string(list_objs)
+        to_write = cls.to_json_string(
+                    [item.to_dictionary() for item in list_objs])
         classname = cls.__name__
         filename = classname + ".json"
         with open(filename, mode="w", encoding="utf-8") as f:
