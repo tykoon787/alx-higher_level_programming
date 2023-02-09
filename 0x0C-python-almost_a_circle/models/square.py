@@ -4,6 +4,7 @@
 This module represents a square. A square is a special rectangle
 Where width, height = size
 """
+# from rectangle import Rectangle
 from models.rectangle import Rectangle
 
 
@@ -56,7 +57,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """
-        Function that updates the square
+        Function that returns an instance of a Square from a dict
 
             Parameters:
                 args (string) : Arguments
