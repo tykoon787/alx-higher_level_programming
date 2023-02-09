@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 import json
 """
-Base Model Class
+This is the Base Model Class containing the Base Class
+
+Classes:
+    Base
+
+Functions:
+    to_json_string(object, list_dictionary)
 """
 
 
@@ -37,4 +43,4 @@ class Base():
         if not list_dictionaries:
             return ("[]")
         else:
-            json.dumps(list_dictionaries)
+            return json.dumps(list_dictionaries)
