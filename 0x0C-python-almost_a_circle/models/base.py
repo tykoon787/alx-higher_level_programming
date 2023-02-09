@@ -31,7 +31,7 @@ class Base():
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_string(list_dictionaries):
+    def to_json_string(list_dictionaries: dict):
         """
         Function that convertes a dictionary to json_string
 
@@ -41,7 +41,9 @@ class Base():
             Return:
                 Json String
         """
-        if len(list_dictionaries) == 0:
+        if (len(list_dictionaries) == 0):
+            return ("[]")
+        if (list_dictionaries is None):
             return ("[]")
         else:
             return json.dumps(list_dictionaries)
