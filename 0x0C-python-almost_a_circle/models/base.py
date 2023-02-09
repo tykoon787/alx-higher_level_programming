@@ -105,10 +105,11 @@ class Base():
                 with open(filename, mode="r", encoding="utf-8") as f:
                     json_string = f.read().splitlines()
                     list_of_instances = cls.from_json_string(json_string)
+                    final = []
                     for item in list_of_instances:
                         dict = item.to_dictionary()
-                        final = [cls.create(**dict)]
-                        final.append(cls.create(**dict))
-                        return (final)
+                        created_instance = cls.create(**dict)
+                        final.append(created_instance)
+                return (final)
             else:
                 return ([])
