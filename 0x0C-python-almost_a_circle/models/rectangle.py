@@ -105,9 +105,7 @@ class Rectangle(Base):
         """
         Returns formatted information to display
         """
-        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
-                                                self.id, self.__x, self.__y,
-                                                self.__width, self.__height)
+        return ("[{}] ({}) <{}>/<{}> - <{}>/<{}>".format(__class__.__name__, self.id, self.__x, self.__y, self.__width, self.__height)) 
 
     def update(self, *args):
         """
