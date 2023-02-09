@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 This is the Base Model Class containing the Base Class
 
@@ -9,6 +8,7 @@ Classes:
 Functions:
     to_json_string(object, list_dictionary)
 """
+import json
 
 
 class Base():
