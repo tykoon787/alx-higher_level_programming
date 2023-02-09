@@ -53,3 +53,25 @@ class Square(Rectangle):
             self.x,
             self.y,
             self.size))
+
+    def update(self, *args, **kwargs):
+        """
+        Function that updates the square
+
+            Parameters:
+                args (string) : Arguments
+                kwargs (dict) : Key=Value paired dict
+        """
+        if len(kwargs) != 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        elif len(args) != 0:
+            try:
+                self.id = args[0]
+                self.size = args[1]
+                self.x = args[2]
+                self.y = args[4]
+            except IndexError:
+                pass
+        else:
+            print()
