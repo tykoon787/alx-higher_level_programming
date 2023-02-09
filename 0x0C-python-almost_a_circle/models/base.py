@@ -108,6 +108,7 @@ class Base():
                     for item in list_of_instances:
                         dict = item.to_dictionary()
                         final = [cls.create(**dict)]
+                        final.append(cls.create(**dict))
                         return (final)
             else:
                 return ([])
