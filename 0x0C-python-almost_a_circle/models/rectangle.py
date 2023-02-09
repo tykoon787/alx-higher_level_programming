@@ -6,7 +6,8 @@ Classes:
     Rectangle(Base)
 
 """
-from models.base import Base
+# from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -97,10 +98,13 @@ class Rectangle(Base):
         """
         Displays the rectangle instance
         """
-        height_counter = 0
-        while height_counter < self.__height:
-            print("#" * self.__width)
-            height_counter += 1
+
+        if self.__y != 0:
+            for newline in range(self.__y):
+                print()
+
+        for row in range(self.__height):
+            print((self.__x * " ") + (self.__width * '#'))
 
     def __str__(self):
         """
