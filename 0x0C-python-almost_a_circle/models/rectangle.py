@@ -32,6 +32,7 @@ class Rectangle(Base):
     area:
         Returns the area of a rectangle
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.__width = width
@@ -147,4 +148,8 @@ class Rectangle(Base):
             Return:
                 Dictionary representation of a rectangle
         """
-        return (self.__dict__)
+        return ({'x': self.x,
+                 'y': self.y,
+                 'id': self.id,
+                 'height': self.height,
+                 'width': self.width})
