@@ -95,3 +95,15 @@ class Base():
 
         temp.update(**dictionary)
         return temp
+
+    @classmethod
+    def load_from_file(cls):
+        nb_instances = ["Rectangle.json", "Square.json"]
+        for filename in nb_instances:
+            if filename == cls.__name__ + ".json":
+                with open(filename, mode="r", encoding="utf-8") as f:
+                    json_string = f.read().splitlines()
+                    list_of_instances = cls.from_json_string(json_string)
+                    return([list_of_instances])
+            else:
+                return ([])
