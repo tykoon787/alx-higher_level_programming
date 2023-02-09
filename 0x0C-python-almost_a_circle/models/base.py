@@ -43,7 +43,7 @@ class Base():
         """
         if (len(list_dictionaries) == 0):
             return ("[]")
-        if (list_dictionaries is None):
+        elif (list_dictionaries is None):
             return ("[]")
         else:
             return json.dumps(list_dictionaries)
