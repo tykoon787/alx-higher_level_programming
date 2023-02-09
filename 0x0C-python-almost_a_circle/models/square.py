@@ -43,22 +43,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-    @property
-    def x(self):
-        return self.x
-
-    @x.setter
-    def x(self, value):
-        self.x = value
-
-    @property
-    def y(self):
-        return self.y
-
-    @y.setter
-    def y(self, value):
-        self.y = value
-
     def __str__(self):
         """
         Return Official Representation of the class
