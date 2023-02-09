@@ -108,6 +108,6 @@ class Base():
                     for item in list_of_instances:
                         dict = item.to_dictionary()
                         cls.create(**dict)
-                    return(list_of_instances)
+                    return([list_of_instances])
             else:
                 return ([])
