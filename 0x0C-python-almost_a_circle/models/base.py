@@ -70,7 +70,7 @@ class Base():
     @classmethod
     def from_json_string(cls, json_string):
         """
-        Function that Convertes a json string to objects
+        Function that Convertes a json string to a list of the JSON string rep
 
             Parameters:
                 json_string (str): Json string to load
@@ -104,7 +104,9 @@ class Base():
                 with open(filename, mode="r", encoding="utf-8") as f:
                     json_string = f.read().splitlines()
                     list_of_instances = cls.from_json_string(json_string)
-                    cls.create()
-                    return(list_of_instances)
+                    for item in list_of_instances:
+                        dict = item.to_dictionary()
+                        cls.create(**dict)
+                    return(list(list_of_instances))
             else:
                 return ([])
