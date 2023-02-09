@@ -121,29 +121,18 @@ class Rectangle(Base):
         """
         Assigns an argument to each attribue
         """
-        if not args:
+        if len(kwargs) != 0:
             kwargs_dict = kwargs.items()
             for key, value in kwargs_dict:
                 setattr(self, key, value)
-        else:
-            args = list(args)
-            if len(args) == 1:
-                self.id = args[0]
-            elif len(args) == 2:
-                self.id = args[0]
-                self.__width = args[1]
-            elif len(args) == 3:
-                self.id = args[0]
-                self.__width = args[1]
-                self.__height = args[2]
-            elif len(args) == 4:
-                self.id = args[0]
-                self.__width = args[1]
-                self.__height = args[2]
-                self.__x = args[3]
-            elif len(args) == 5:
+        elif len(args) != 0:
+            try:
                 self.id = args[0]
                 self.__width = args[1]
                 self.__height = args[2]
                 self.__x = args[3]
                 self.__y = args[4]
+            except IndexError:
+                pass
+        else:
+            print()
