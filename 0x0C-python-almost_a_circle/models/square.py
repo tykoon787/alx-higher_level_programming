@@ -44,6 +44,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        print("Value Received: {}".format(value))
         if type(value) != int:
             raise TypeError("Size must be an integer")
         if value <= 0:
@@ -56,6 +57,7 @@ class Square(Rectangle):
 
     @x.setter
     def x(self, value):
+        print("Value Received: {}".format(value))
         if type(value) != int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -68,6 +70,7 @@ class Square(Rectangle):
 
     @y.setter
     def y(self, value):
+        print("Value Received: {}".format(value))
         if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:
