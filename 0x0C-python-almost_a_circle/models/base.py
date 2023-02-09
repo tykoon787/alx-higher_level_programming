@@ -107,7 +107,6 @@ class Base():
                     list_of_instances = cls.from_json_string(json_string)
                     for item in list_of_instances:
                         dict = item.to_dictionary()
-                        cls.create(**dict)
-                    return([list_of_instances])
+                        return (cls.create(**dict))
             else:
                 return ([])
