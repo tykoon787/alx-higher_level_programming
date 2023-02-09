@@ -9,8 +9,6 @@ Functions:
     to_json_string(object, list_dictionary)
 """
 import json
-from rectangle import Rectangle
-from square import Square
 
 
 class Base():
