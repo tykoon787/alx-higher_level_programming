@@ -105,6 +105,6 @@ class Base():
                     json_string = f.read().splitlines()
                     list_of_instances = cls.from_json_string(json_string)
                     cls.create()
-                    return([list_of_instances])
+                    return(list_of_instances)
             else:
                 return ([])
