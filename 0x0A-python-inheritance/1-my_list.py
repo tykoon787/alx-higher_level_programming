@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # Clas myList inheriting from List
+"""
+Class inheriting from list
+"""
 
 
 class MyList(list):
