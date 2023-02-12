@@ -5,7 +5,6 @@ add_integer:
     Returns sum of the args
 """
 
-
 def add_integer(a, b=98):
     """
     Function to Add an Integer
