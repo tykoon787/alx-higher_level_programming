@@ -7,6 +7,10 @@ First Import the module
 Now use it
 >>> bg = BaseGeometry()
 
+Basis Usage
+    >>> bg.integer_validator("age", (4))
+    >>> bg.integer_validator("age", 1)
+    
 Tesing calling unimplemented area()
     >>> bg.area()
     Traceback (most recent call last):
@@ -18,6 +22,20 @@ Testing with a non integer
     Traceback (most recent call last):
         ...
     TypeError: name must be an integer
+    >>> bg.integer_validator("age", [3])
+    Traceback (most recent call last): 
+    ...
+    TypeError: age must be an integer
+    >>> bg.integer_validator("age", [3, 4])
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+    >>> bg.integer_validator("age", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
+
 
 Tesing with integer value less than 0
     >>> bg.integer_validator("distance", -4)
@@ -30,3 +48,15 @@ Tesing with integer value equal to 0
     Traceback (most recent call last):
     ...
     ValueError: age must be greater than 0
+
+Tesing with no args for the validator
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Testing with only one param name
+    >>> bg.integer_validator("age")
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
