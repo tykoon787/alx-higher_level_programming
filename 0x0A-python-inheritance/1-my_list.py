@@ -6,6 +6,9 @@ Class inheriting from list
 
 
 class MyList(list):
+    """
+    Class inheriting from my list
+    """
     def print_sorted(self):
         """
         Prints a list, but sorted
