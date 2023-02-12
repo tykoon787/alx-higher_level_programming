@@ -1,7 +1,7 @@
 MyList = __import__("1-my_list").MyList
 
 'module doctstring'
->>> m = __import("1-my_list").__doc__
+>>> m = __import__("1-my_list").__doc__
 >>> len(m) > 1
 True
 
