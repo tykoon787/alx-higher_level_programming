@@ -47,3 +47,6 @@
 
 ## 15-groups.sql
 > Lists records that have similar scores
+
+## 16-no_links.sql
+> Script that lists all records of the table except names that are empty
