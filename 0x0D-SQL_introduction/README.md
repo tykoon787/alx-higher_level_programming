@@ -14,3 +14,6 @@
 
 ## 4-first_table.sql
 > Creates first_table
+
+## 5-full_table.sql
+> Display full description of the `first_table`
