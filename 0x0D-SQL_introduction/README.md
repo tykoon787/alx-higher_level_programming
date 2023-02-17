@@ -11,3 +11,6 @@
 
 ## 3-list_tables.sql
 > Lists all the tables in a database
+
+## 4-first_table.sql
+> Creates first_table
