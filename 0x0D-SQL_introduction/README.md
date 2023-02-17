@@ -35,3 +35,6 @@
 
 ## 11-best_score.sql
 > Lists the best scores `>=10`
+
+## 12-no_cheating.sql
+> Updates `Bob's` score to 10
