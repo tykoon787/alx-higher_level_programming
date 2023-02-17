@@ -38,3 +38,6 @@
 
 ## 12-no_cheating.sql
 > Updates `Bob's` score to 10
+
+## 13-change_class.sql
+> Deletes `scores <= 5`
