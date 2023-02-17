@@ -50,3 +50,4 @@
 
 ## 16-no_links.sql
 > Script that lists all records of the table except names that are empty
+
