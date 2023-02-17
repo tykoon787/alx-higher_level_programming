@@ -1,2 +1,2 @@
 -- Script that lists all records of the second_table
-SELECT score, name COUNT(name) GROUP BY score ORDER BY score DESC;
+SELECT score, name FROM second_table WHERE name IS NOT NULL ORDER BY score DESC;
