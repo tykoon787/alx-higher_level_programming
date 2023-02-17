@@ -41,3 +41,6 @@
 
 ## 13-change_class.sql
 > Deletes `scores <= 5`
+
+## 14-Average.sql
+> Computes the average of the scores
