@@ -29,3 +29,6 @@
 
 ## 9-full_creation.sql
 > Create a second_table and insert values into the table
+
+## 10-top_score.sql
+> Displays scores and names in DESC order
