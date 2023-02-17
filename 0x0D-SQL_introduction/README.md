@@ -44,3 +44,4 @@
 
 ## 14-Average.sql
 > Computes the average of the scores
+
