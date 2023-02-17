@@ -17,3 +17,6 @@
 
 ## 5-full_table.sql
 > Display full description of the `first_table`
+
+## 6-list_values.sql
+> List all the rows of the table
