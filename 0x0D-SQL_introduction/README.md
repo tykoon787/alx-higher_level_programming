@@ -26,3 +26,6 @@
 
 ## 8-count_89.sql
 > Count the number of records with the `id=89`
+
+## 9-full_creation.sql
+> Create a second_table and insert values into the table
