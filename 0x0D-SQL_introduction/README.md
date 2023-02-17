@@ -20,3 +20,7 @@
 
 ## 6-list_values.sql
 > List all the rows of the table
+
+
+## 7-insert_values.sql
+> Insert a new row in the table `first_table`
