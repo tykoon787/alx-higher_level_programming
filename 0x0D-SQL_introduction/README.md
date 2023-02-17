@@ -45,3 +45,5 @@
 ## 14-Average.sql
 > Computes the average of the scores
 
+## 15-groups.sql
+> Lists records that have similar scores
