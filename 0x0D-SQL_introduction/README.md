@@ -32,3 +32,6 @@
 
 ## 10-top_score.sql
 > Displays scores and names in DESC order
+
+## 11-best_score.sql
+> Lists the best scores `>=10`
