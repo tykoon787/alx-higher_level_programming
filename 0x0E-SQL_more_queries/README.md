@@ -9,3 +9,6 @@
 
 ## 2-create_read_user.sql
 > Create a database `hbtn_02` and grant `user_0d_2` SELECT privelege
+
+## 3-force_name.sql
+> Creates a table `force_name`
