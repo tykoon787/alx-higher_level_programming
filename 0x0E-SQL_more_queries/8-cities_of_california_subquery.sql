@@ -1,5 +1,5 @@
 -- Script that lists all cities in california
-SELECT cities.name, cities.id
+SELECT cities.id, cities.name
 FROM cities, states
 WHERE cities.id = states.id
     AND states.name = 'California'
