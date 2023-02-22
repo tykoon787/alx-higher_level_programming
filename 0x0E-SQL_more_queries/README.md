@@ -24,3 +24,6 @@
 
 ## 7-cities.sql
 > Creates the `cities` table
+
+## 8-cities_of_california_subquery.sql
+> Lists all cities in california
