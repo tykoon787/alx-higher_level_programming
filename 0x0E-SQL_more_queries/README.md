@@ -21,3 +21,6 @@
 
 ## 6-states.sql
 > Creates a database `htbn_usa` and a table `states`
+
+## 7-cities.sql
+> Creates the `cities` table
