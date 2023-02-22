@@ -12,3 +12,6 @@
 
 ## 3-force_name.sql
 > Creates a table `force_name`
+
+## 4-never_empty.sql
+> Creates a table with default value of ID
