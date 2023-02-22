@@ -36,3 +36,6 @@
 
 ## 11-genre_id_all_shows.sql
 > Left Join
+
+## 12-no_genre.sql
+> lists all shows contained in hbtn_0d_tvshows without a genre linked.
