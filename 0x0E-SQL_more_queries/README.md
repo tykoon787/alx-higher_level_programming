@@ -15,3 +15,6 @@
 
 ## 4-never_empty.sql
 > Creates a table with default value of ID
+
+## 5-unique_id.sql
+> Table whose ID is unique
