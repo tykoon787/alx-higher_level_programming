@@ -18,3 +18,6 @@
 
 ## 5-unique_id.sql
 > Table whose ID is unique
+
+## 6-states.sql
+> Creates a database `htbn_usa` and a table `states`
