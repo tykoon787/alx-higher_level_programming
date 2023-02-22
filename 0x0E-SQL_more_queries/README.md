@@ -33,3 +33,6 @@
 
 ## 10-genre_id_by_shows.sql
 > Lists all shows with a linked genre
+
+## 11-genre_id_all_shows.sql
+> Left Join
