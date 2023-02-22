@@ -30,3 +30,6 @@
 
 ## 9-Citites_by_state_join.sql
 > List all cities
+
+## 10-genre_id_by_shows.sql
+> Lists all shows with a linked genre
