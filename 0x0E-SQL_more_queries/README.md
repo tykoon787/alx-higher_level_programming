@@ -27,3 +27,6 @@
 
 ## 8-cities_of_california_subquery.sql
 > Lists all cities in california
+
+## 9-Citites_by_state_join.sql
+> List all cities
