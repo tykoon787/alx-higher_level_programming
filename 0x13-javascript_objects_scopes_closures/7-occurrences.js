@@ -11,4 +11,5 @@ function nbOccurences (list, searchElement) {
   return count;
 }
 
-module.exports = nbOccurences;
+// nbOccurences
+exports.nbOccurences = function () {};
