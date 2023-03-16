@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const [firstArg] = process.argv.slice(2);
-let num = parseInt(firstArg);
+const num = parseInt(firstArg);
 
 if (parseInt(firstArg)) {
   for (let width = num; width > 0; width--) {
