@@ -6,7 +6,7 @@ if (parseInt(firstArg)) {
   for (let width = num; width > 0; width--) {
     let row = '';
     for (let height = num; height > 0; height--) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row);
   }
