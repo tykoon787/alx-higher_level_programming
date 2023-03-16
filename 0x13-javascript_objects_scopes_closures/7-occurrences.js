@@ -12,4 +12,4 @@ function nbOccurences (list, searchElement) {
 }
 
 // nbOccurences
-exports.nbOccurences = function () {};
+exports.nbOccurences = nbOccurences;
