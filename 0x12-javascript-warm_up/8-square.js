@@ -11,5 +11,5 @@ if (parseInt(firstArg)) {
     console.log(row);
   }
 } else {
-  console.log('Missing number of occurences');
+  console.log('Missing size');
 }
