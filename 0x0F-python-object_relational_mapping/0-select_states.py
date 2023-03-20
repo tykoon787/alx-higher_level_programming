@@ -18,6 +18,6 @@ if __name__ == "__main__":
 
     cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
     results = cursor.fetchall()
-    for id, name in results:
-        print("(%s, '%s')" % (id, name))
+    for row in results:
+        print("%s" % (row,))
     db.close()
