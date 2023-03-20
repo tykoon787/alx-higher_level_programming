@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-import sys
-import MySQLdb
 """
 A script that selects all states from the states
 Table
 """
+
+import sys
+import MySQLdb
+
 if __name__ == "__main__":
     user_name = sys.argv[1]
     user_pass = sys.argv[2]
