@@ -29,6 +29,9 @@ if __name__ == "__main__":
 
     # Query to get all results
     results = session.query(State).first()
-    print("{}: {}".format(results.id, results.name))
+    if (results):
+        print("{}: {}".format(results.id, results.name))
+    else:
+        print("Nothing")
     # Close Session
     session.close()
