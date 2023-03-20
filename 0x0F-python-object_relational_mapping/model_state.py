@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
 This module contains a state class
+
+Classes:
+    States
 """
 
 import sys
