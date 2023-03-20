@@ -21,8 +21,8 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     cursor.execute(
-        "SELECT * FROM states WHERE BINARY name = '%s'\
-            ORDER BY states.id ASC" % (user_input,))
+        "SELECT * FROM states WHERE BINARY name = '{}'\
+            ORDER BY states.id ASC".format(user_input))
     results = cursor.fetchall()
     for row in results:
         print("%s" % (row,))
