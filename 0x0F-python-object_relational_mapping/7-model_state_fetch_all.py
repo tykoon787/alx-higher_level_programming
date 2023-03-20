@@ -17,7 +17,7 @@ mysql_db = sys.argv[3]
 engine = create_engine('mysql+mysqldb://%s:%s@localhost:3306/%s' %
                        (mysql_username, mysql_password, mysql_db),
                        pool_pre_ping=True)
-
+Base.metadata.create_all(engine)
 
 # Create a session to query the db
 Session = sessionmaker(bind=engine)
@@ -29,3 +29,6 @@ session = Session()
 results = session.query(State).all()
 for result in results:
     print("{}: {}".format(result.id, result.name))
+
+# Close Session
+session.close()
