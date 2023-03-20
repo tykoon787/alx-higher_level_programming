@@ -15,5 +15,6 @@ cursor = db.cursor()
 
 cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 results = cursor.fetchall()
-
+for id, name in results:
+    print("(%s, '%s')" % (id, name))
 db.close()
