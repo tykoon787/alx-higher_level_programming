@@ -14,7 +14,7 @@ mysql_password = sys.argv[2]
 mysql_db = sys.argv[3]
 
 # Create the engine
-engine = create_engine('mysql+mysqldb://%s:%s@localhost:3306/%s' %
+engine = create_engine('mysql+mysqldb://%s:%s@localhost/%s' %
                        (mysql_username, mysql_password, mysql_db),
                        pool_pre_ping=True)
 Base.metadata.create_all(engine)
