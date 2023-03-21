@@ -7,6 +7,7 @@ import sys
 from sqlalchemy import create_engine
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm.exc import NoResultFound, MultipleResultsFound
 
 if __name__ == "__main__":
 
@@ -29,11 +30,11 @@ if __name__ == "__main__":
     session = Session()
 
     # Query to get all results
-    results = session.query(State).filter_by(
-        name='%s' % (state_search,)).first()
-    if results:
+    try:
+        results = session.query(State).filter_by(
+            name='%s' % (state_search,)).one()
         print(results.id)
-    else:
+    except NoResultFound:
         print("Not Found")
 
     # Close Session
