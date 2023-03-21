@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     # Delete Record
     results = session.query(State).filter(
-        State.name.ilike("%a%")).delete()
+        State.name.like("%a%")).delete()
     session.commit()
     print(results)
 
