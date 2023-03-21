@@ -29,9 +29,12 @@ if __name__ == "__main__":
 
     # Delete Record
     results = session.query(State).filter(
-        State.name.like("%a%")).delete()
+        State.name.like("%a%")).all()
+
+    for result in results:
+        session.delete(result)
+
     session.commit()
-    print(results)
 
     # Close Session
     session.close()
