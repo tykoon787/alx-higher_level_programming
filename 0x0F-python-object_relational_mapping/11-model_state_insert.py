@@ -13,7 +13,6 @@ if __name__ == "__main__":
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
     mysql_db = sys.argv[3]
-    state_search = sys.argv[4]
 
     # Create the engine
     engine = create_engine('mysql+mysqldb://%s:%s@localhost/%s' %
