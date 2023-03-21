@@ -30,15 +30,11 @@ if __name__ == "__main__":
     session = Session()
 
     # Query to get all results
-    results = ""
-    rows = session.query(State).all()
-    for i in rows:
-        if state_search in i.name:
-            results = i.id
-
-    if results != "":
-        print(results)
-    else:
+    try:
+        results = session.query(State).filter_by(
+            name='%s' % (state_search,)).one()
+        print(results.id)
+    except NoResultFound:
         print("Not Found")
 
     # Close Session
