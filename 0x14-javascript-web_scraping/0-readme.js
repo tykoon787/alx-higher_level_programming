@@ -9,7 +9,7 @@ if (len <= 2) {
 } else {
   const file = path.resolve(argv[2]);
   fs.readFile(file, 'utf8', (err, data) => {
-    if (err) console.log('Error', err);
+    if (err) console.log(err);
     else console.log(data);
   });
 }
