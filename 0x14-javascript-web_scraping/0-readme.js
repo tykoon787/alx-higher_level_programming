@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const fs = require('fs');
 const path = require('path');
-const { argv } = require('node:process');
+const { argv } = require('process');
 
 const len = argv.length;
 if (len <= 2) {
