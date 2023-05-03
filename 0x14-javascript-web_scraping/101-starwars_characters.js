@@ -18,17 +18,32 @@ if (len <= 2) {
     else {
       // Retrieve characters (urls)
       const characters = JSON.parse(body).characters;
-      // For each character, perfom request
+      const promises = []; // create an array to store the promises returned by requests
+      // For each character, perform a request and store the promise in the array
       characters.forEach((person) => {
-        request.get(person, (personErr, personRes, personBody) => {
-          if (err) console.log(personErr);
-          else {
-            // Get name of person
-            const name = JSON.parse(personBody).name;
-            console.log(name);
-          }
+        const promise = new Promise((resolve, reject) => {
+          request.get(person, (personErr, personRes, personBody) => {
+            if (personErr) reject(personErr);
+            else {
+              // Get name of person
+              const name = JSON.parse(personBody).name;
+              resolve(name); // resolve the promise with the person's name
+            }
+          });
         });
+        promises.push(promise); // push the promise into the array
       });
+
+      Promise.all(promises) // wait for all promises to resolve
+        .then((names) => {
+          // names is an array of all the resolved promises
+          names.forEach((char) => {
+            console.log(char);
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   });
 }
