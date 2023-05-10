@@ -1,3 +1,5 @@
-$.get('https://swapi-api.hbtn.io/api/people/5/?format=json', function (data) {
-  $('DIV#character').text(data.name);
+$(document).ready(()=>{
+  $.getJSON('https://swapi-api.alx-tools.com/api/people/5/?format=json', (data)=>{
+    $('#character').text(data.name)
+  });
 });
