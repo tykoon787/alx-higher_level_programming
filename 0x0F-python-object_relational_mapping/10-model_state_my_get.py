@@ -35,7 +35,7 @@ if __name__ == "__main__":
             name='%s' % (state_search,)).one()
         print(results.id)
     except NoResultFound:
-        print("Not Found")
+        print("Not found")
 
     # Close Session
     session.close()
